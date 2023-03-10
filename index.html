@@ -33,7 +33,10 @@
         <a-entity zappar-face id="face-group">
 
             <!-- PLACE 3D OBJECTS HERE TO TRACK FROM THE CENTER OF THE FACE -->
-            <a-box scale="0.2 0.2 0.2"></a-box>
+            <!-- <a-box scale="0.3 0.3 0.3" color="red"></a-box> -->
+            <!-- <a-box scale="0.2 0.2 0.2"></a-box> -->
+            <a-entity id="box" geometry="primitive: box" material="color: red"></a-entity>
+
 
             <!-- AND/OR USE USE A FACE MESH OBJECT THAT FITS TO THE FACE AS THE USER'S EXPRESSION CHANGES -->
             <a-entity geometry="primitive: face-mesh; face: #face-group" material="src:#face-mesh-template; transparent: true;"></a-entity>
